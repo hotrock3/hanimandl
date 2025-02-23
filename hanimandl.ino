@@ -2171,16 +2171,18 @@ void setup()
 #endif
 
 // switch Vcc / GND on normal pins for convenient wiring
-// output is 3.3V for VCC
-  digitalWrite (switch_vcc_pin, HIGH);
-  digitalWrite (button_start_vcc_pin, HIGH);
-  digitalWrite (button_stop_vcc_pin, HIGH);
 
 //  pinMode (_GND, OUTPUT);     // turn on GND pin first (important!)
 // turn on VCC power
   pinMode (switch_vcc_pin, OUTPUT);
   pinMode (button_start_vcc_pin, OUTPUT);
   pinMode (button_stop_vcc_pin, OUTPUT);
+
+  
+// output is 3.3V for VCC
+  digitalWrite (switch_vcc_pin, HIGH);
+  digitalWrite (button_start_vcc_pin, HIGH);
+  digitalWrite (button_stop_vcc_pin, HIGH);
 
 // Buzzer
   pinMode(buzzer_pin, OUTPUT);
